@@ -7,6 +7,7 @@ The problem description provided by Sabancı University can be found as the optc
 
 - [Healthcare Unit Deployment Formulation (MinMaxLocation)](#healthcare-unit-deployment-formulation)
 - [Capacitated Ambulance Routing Formulation (CVRP)](#ambulance-routing-formulation)  
+- [Example Solution Photos](#example-solution-for-instance-1)  
 
 ---
 ## Healthcare Unit Deployment Formulation
@@ -100,3 +101,20 @@ Minimize total distance traveled by all ambulances:
 5. **Subtour elimination**  
    Prevents disconnected loops:  
    ![C5](https://latex.codecogs.com/svg.image?u_i%20-%20u_j%20+%20Q\,z_{ij}%20\le%20Q%20-%20R_j\,,%20\forall\,i,j\in%20H)
+
+## Example Solution for Instance 1
+
+### Stage 1 – MinmaxL Deployment
+
+![Healthcare Deployment for Instance 1 (MinmaxL)](Solution_Photos/Ins1L1.png)
+
+*Figure:* Optimal placement of healthcare units and community assignments for Instance 1 under the MinmaxL model. Each deployed unit (bold label) is connected to its served communities.
+
+---
+
+### Stage 2 – CVRP Ambulance Routing
+
+![Ambulance Routing Solution for Instance 1 (CVRP)](Solution_Photos/Ins1VRP1.png)
+
+*Figure:* Vehicle routing plan for Instance 1 under the Capacitated VRP. Routes originate at the depot (node 0) and respect ambulance capacity \(Q=10,000\). Each colored path shows a single ambulance’s tour.
+
