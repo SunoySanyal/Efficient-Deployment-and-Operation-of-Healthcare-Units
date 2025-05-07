@@ -1,0 +1,12 @@
+# _config.yml
+plugins:
+  - jekyll‐mathjax
+
+mathjax:
+  tex_extensions: ["AMSmath.js", "AMSsymbols.js"]
+  inline_delimiters:
+    - ["\\(", "\\)"]
+    - ["$", "$"]
+  display_delimiters:
+    - ["\\[", "\\]"]
+    - ["$$", "$$"]
